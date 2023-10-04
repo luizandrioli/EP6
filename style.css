@@ -1,0 +1,57 @@
+body{
+    background-color: black;
+    display: grid;
+    grid-template-areas: 
+    "cab cab cab"
+    "pri pri sec"
+    "rod rod rod";
+    gap: 5px;
+    grid-template-columns: 200px auto 400px ;
+    grid-template-rows: auto auto auto;
+}
+header, aside, main, footer{
+    background-color: silver;
+}
+header{
+    grid-area: cab;
+    height: 180px;
+    display: inline;
+    align-items: center;
+    text-align:right
+}
+
+.calculadora{
+    margin-right: 100px;
+
+}
+
+.imgheader{
+    
+    width:200px;
+    height: 20px;
+    
+}
+
+aside{
+    grid-area: sec;
+    text-align: center;
+}
+
+main{
+    grid-area: pri;
+    text-align: center;
+    
+    
+}
+
+
+footer{
+    grid-area: rod;
+    
+
+}
+
+p{
+    font-size: 20px;
+    margin: 20px;
+}

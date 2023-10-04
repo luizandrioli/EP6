@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENERGIA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <header class="grad_h">
+        <div class="imgheader">
+            <img src="imagens/equivalencia.png">
+        </div>
+        <div class="calculadora">
+            <h1>Cálculo de Soma:</h1>
+             Valor 1: <input type="text" id="aram1" value="0"><br>
+             Valor 2: <input type="text" id="aram2" value="0"><br>
+            <input type="button" value="Somar" onclick="josefa()">
+            <input type="button" value="Subtrair" onclick="subtrair()">
+            <input type="button" value="Multiplicar" onclick="multiplicacao()">
+            <input type="button" value="Dividir" onclick="divisao()"><br>
+            Resultado: <input type="text" id="fernanda" value="0">
+        </div>
+    </header>
+
+    <main class="grad_m">
+         <h1>ENERGIA</h1>
+        
+        <p>Dentro da física, a energia é vista como a capacidade de produzir trabalho. Ou seja, a energia na física é aquilo que obtemos de determinada fonte para poder produzir alguma coisa. Por exemplo, quando armazenamos energia solar para recarregar a bateria de um carro.</p><br>
+        <h1>
+         E=mc² - Einstein e a equivalência entre matéria e energia
+        </h1> 
+
+        <p>Você já deve ter visto a seguinte equação: E=mc2</p><br>
+         <p>Essa é a mais célebre equação científica do século 20 e foi desenvolvida por Albert Einstein. Ela estabelece a equivalência quantitativa da transformação de matéria em energia ou vice-versa.</p><br>
+        <p>Nela, E = energia, m = massa e c2 = velocidade da luz elevada ao quadrado. Sendo a velocidade da luz 300.000 Km/s ou, nas unidades do Sistema Internacional de Unidades, 300.000.000 m/s, a energia teoricamente obtenível da transformação completa de um único quilograma de massa é de astronômicos 9 x 1016Joules [1kg . (300.000.000 m/s)2].</p><br>
+         <p>Para se ter ideia do significado desse número, segundo a equação de Einstein, a transformação completa de dez quilogramas de massa produziria uma quantidade de energia suficiente para evaporar toda a água da Baía de Guanabara.</p><br>
+
+        <h1>Transformação de matéria em energia.</h1>
+         <p>À primeira vista, essa sentença matemática parece mais próxima dos misteriosos cálculos relativistas do grande cientista alemão que da física que aprendemos nas salas de aula. </p><br>
+        <p>Na verdade, a parte relativista da equação se concentra no elemento "c", a velocidade da luz que, segundo a teoria da relatividade, é a única constante do universo. Ou seja, tempo, espaço, matéria e energia são relativos, mas a velocidade da luz no vácuo é sempre a mesma, independentemente do referencial adotado para medi-la.</p><br> 
+        <p>Entender o porquê de uma quantidade de matéria se converter em outra quantidade equivalente de energia em uma proporção direta da velocidade da luz, implica observar o aspecto de constante relativística dessa grandeza.</p><br>
+        <p> No restante, podemos comparar a equação de Einstein com os desdobramentos matemáticos de duas "formulinhas" bem conhecidas.</p>
+    
+         <h1>FORMULAS</h1>
+         <p>1a. A equação da segunda lei de Newton, princípio fundamental da dinâmica:</p><br>
+        <p>F = m.a Onde: F = força, m = massa e a = aceleração. 2a. A equação que define energia ou trabalho em função da força e distância.   E = F.d Onde: E = energia ou trabalho, F= força e d= distância. No Sistema Internacional de Unidades, isso significa que, quando deslocamos uma massa de peso 1 Newton pela distância de 1 metro, produzimos 1 Joule de trabalho, para o que precisamos consumir 1 Joule de energia.</p><br>
+         <p>Como peso é a força resultante da aceleração da gravidade, basta recorrermos à equação de Newton citada e à aritmética básica para calcularmos qual massa corresponde à força-peso de 1 Newton, para aceleração da gravidade g = 9,8m/s2.</p><br>
+        <p>Força = massa x aceleração.</p><br>
+        <h2>Força-peso = massa x aceleração da gravidade.</h2><br>
+         <p>Então: 1N = m x 9,8m/s2  m = 1/9,8 = 0,102 kg.</p><br>
+        
+    </main>
+    <aside class="grad_a">
+        <h1>
+           EXERCÍCIOS
+        </h1>
+        <form>
+            <h3>pergunta 1</h3>
+            <input type="radio" name="resposta" value="errada">A<br>
+            <input type="radio" name="resposta" value="errada">B<br>
+            <input type="radio" name="resposta" value="correta">C<br>
+            <input type="radio" name="resposta" value="errada">D<br>
+            <button type="button" onclick="funcaoresposta()">Responder</button>
+            <p id="retorno"></p>
+        </form>
+        <form>
+            <h3>pergunta 2</h3>
+            <input type="radio" name="resposta" value="correta">A<br>
+            <input type="radio" name="resposta" value="errada">B<br>
+            <input type="radio" name="resposta" value="errada">C<br>
+            <input type="radio" name="resposta" value="errada">D<br>
+            <button type="button" onclick="funcaoresposta2()">Responder</button>
+            <p id="retorno2"></p>
+        </form>
+        <form>
+            <h3>pergunta 3</h3>
+            <input type="radio" name="resposta" value="errada">A<br>
+            <input type="radio" name="resposta" value="errada">B<br>
+            <input type="radio" name="resposta" value="errada">C<br>
+            <input type="radio" name="resposta" value="correta">D<br>
+            <button type="button" onclick="funcaoresposta3()">Responder</button>
+            <p id="retorno3"></p>
+        </form>
+    </aside>
+
+    <footer class="grad_f">
+        oi
+    </footer>
+</body>
+</html>
