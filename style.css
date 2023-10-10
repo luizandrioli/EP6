@@ -1,10 +1,32 @@
-body{
+.body1{
     background-color: black;
     display: grid;
     grid-template-areas: 
     "cab cab cab"
     "pri pri sec"
     "rod rod rod";
+    gap: 5px;
+    grid-template-columns: 200px auto 400px ;
+    grid-template-rows: auto auto auto;
+}
+.body2{
+    background-color: black;
+    display: grid;
+    grid-template-areas: 
+    "cab2 cab2 cab2"
+    "pri2 pri2 sec2"
+    "rod2 rod2 rod2";
+    gap: 5px;
+    grid-template-columns: 200px auto 400px ;
+    grid-template-rows: auto auto auto;
+}
+.body3{
+    background-color: black;
+    display: grid;
+    grid-template-areas: 
+    "cab3 cab3 cab3"
+    "pri3 pri3 pri3"
+    "rod3 rod3 rod3";
     gap: 5px;
     grid-template-columns: 200px auto 400px ;
     grid-template-rows: auto auto auto;
@@ -19,6 +41,72 @@ header{
     align-items: center;
     text-align:right
 }
+.grad_h2{
+    grid-area: cab2;
+    height: 180px;
+    display: inline;
+    align-items: center;
+    text-align:right
+}
+.grad_h3{
+    grid-area: cab3;
+    height: 180px;
+    display: inline;
+    align-items: center;
+    text-align:right
+}
+
+
+aside{
+    grid-area: sec;
+    text-align: center;
+}
+.grad_a2{
+    grid-area: sec2;
+    
+}
+
+main{
+    grid-area: pri;
+    text-align: center;
+    
+    
+}
+.grad_m2{
+    grid-area: pri2;
+    text-align: center;
+    
+    
+}
+.grad_m3{
+    grid-area: pri3;
+    text-align: center;
+    
+    
+}
+.grad_h2{
+    grid-area: pri2;
+    text-align: center;
+    
+    
+}
+
+
+footer{
+    grid-area: rod;
+    
+
+}
+.grad_f2{
+    grid-area: rod2;
+    
+
+}
+.grad_f3{
+    grid-area: rod3;
+    
+
+}
 
 .calculadora{
     margin-right: 100px;
@@ -30,25 +118,6 @@ header{
     width:200px;
     height: 20px;
     
-}
-
-aside{
-    grid-area: sec;
-    text-align: center;
-}
-
-main{
-    grid-area: pri;
-    text-align: center;
-    
-    
-}
-
-
-footer{
-    grid-area: rod;
-    
-
 }
 
 p{
