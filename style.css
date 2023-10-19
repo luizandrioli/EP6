@@ -1,9 +1,10 @@
+
 .body1{
     background-color: black;
     display: grid;
     grid-template-areas: 
     "cab cab cab"
-    "pri pri sec"
+    "pri pri pri"
     "rod rod rod";
     gap: 5px;
     grid-template-columns: 200px auto 400px ;
@@ -13,79 +14,45 @@
     background-color: black;
     display: grid;
     grid-template-areas: 
-    "cab2 cab2 cab2"
-    "pri2 pri2 sec2"
-    "rod2 rod2 rod2";
+    "cab cab cab"
+    "pri pri sec"
+    "rod rod rod";
     gap: 5px;
-    grid-template-columns: 200px auto 400px ;
+    grid-template-columns:60% 24% auto;
     grid-template-rows: auto auto auto;
 }
 .body3{
     background-color: black;
     display: grid;
     grid-template-areas: 
-    "cab3 cab3 cab3"
-    "pri3 pri3 pri3"
-    "rod3 rod3 rod3";
+    "cab cab cab"
+    "pri pri pri"
+    "rod rod rod";
     gap: 5px;
-    grid-template-columns: 200px auto 400px ;
+    grid-template-columns:200px auto 400px;
     grid-template-rows: auto auto auto;
 }
+
 header, aside, main, footer{
     background-color: silver;
 }
 header{
+    background-color: midnightblue;
     grid-area: cab;
     height: 180px;
     display: inline;
     align-items: center;
     text-align:right
 }
-.grad_h2{
-    grid-area: cab2;
-    height: 180px;
-    display: inline;
-    align-items: center;
-    text-align:right
-}
-.grad_h3{
-    grid-area: cab3;
-    height: 180px;
-    display: inline;
-    align-items: center;
-    text-align:right
-}
-
 
 aside{
     grid-area: sec;
     text-align: center;
 }
-.grad_a2{
-    grid-area: sec2;
-    
-}
 
 main{
+    background-color: aliceblue;
     grid-area: pri;
-    text-align: center;
-    
-    
-}
-.grad_m2{
-    grid-area: pri2;
-    text-align: center;
-    
-    
-}
-.grad_m3{
-    grid-area: pri3;
-    text-align: center;
-    
-    
-}
-.grad_h2{
-    grid-area: pri2;
     text-align: center;
     
     
@@ -97,16 +64,6 @@ footer{
     
 
 }
-.grad_f2{
-    grid-area: rod2;
-    
-
-}
-.grad_f3{
-    grid-area: rod3;
-    
-
-}
 
 .calculadora{
     margin-right: 100px;
@@ -115,12 +72,125 @@ footer{
 
 .imgheader{
     
-    width:200px;
-    height: 20px;
-    
+    max-width: 250px;
+}
+
+.legenda{
+    line-height: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.citacao{
+     
+    font-family:'Courier New', Courier, monospace;
 }
 
 p{
     font-size: 20px;
     margin: 20px;
 }
+.verde{
+    color: rgb(6, 253, 6);
+}
+.vermelho{
+    color: red;
+}
+
+.elemento_pai{
+    display: flex;
+    justify-content: center;
+        
+    padding: 20px;
+    flex-wrap: wrap;
+    align-items: center;  
+}
+
+.elemento_pai2{     
+    display: flex;
+    justify-content: center;
+        
+    padding: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+.card{
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
+    margin: 60px;
+    text-align: center;
+    box-shadow: 3px 6px 9px #9fa106;
+    transition: 0.5s;
+    background-color: #584f58b3;
+}
+
+.card2{
+    border-radius: 10px;
+    padding: 10px;
+    width: 730px;
+    margin: 90px;
+    text-align: center;
+    box-shadow: 3px 6px 9px #020b4d;
+    transition: 0.5s;
+    background-color: #584f58b3;
+       
+}
+
+.imagemproduto{
+    width: 700px;
+    height: 690px;
+}
+
+
+.texto a{
+    display: block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.5s;
+ }
+
+.textoAD a{
+    display: block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.5s;
+ }
+    
+.card:hover{
+    background-color: black;
+    color: white;
+ }
+    
+.card:hover a{
+    background-color: rgb(255, 0, 0);
+     color: black;
+}
+
+.lista{
+    list-style-type: none;
+}
+
+.card:hover img{
+        border-radius: 30%;
+       
+        
+}
+    
+    .texto a:hover{
+        background-color: rgb(253, 0, 0);
+    }
+
+    .card img{
+        border-radius: 30%;
+        height: 190px;
+        width: 240px;
+
+    }
