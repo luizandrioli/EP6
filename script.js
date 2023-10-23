@@ -127,15 +127,15 @@ function funcao_resposta(){
             contador = contador + 1;
         }
         else{
-            document.getElementById("resp_errada_6").innerHTML = " 6"
-
+            document.getElementById("resp_errada_6").innerHTML = " Uma vez que o corpo desliza com velocidade constante, a aceleração sobre ele é nula, portanto a força resultante sobre esse corpo também é nula. A alternativa correta é a letra B."
+            
         }
         if(resp7.value == "correta"){
             document.getElementById("resp_correta_7").innerHTML = "Correta!"
             contador = contador + 1;
         }
         else{
-            document.getElementById("resp_errada_7").innerHTML = " 7 "
+            document.getElementById("resp_errada_7").innerHTML = " Sendo a inércia do segundo corpo quatro vezes menor que a do primeiro corpo, podemos afirmar, com base na 2ª lei de Newton, que a aceleração obtida por esse corpo será quatro vezes maior que aquela desenvolvida pelo corpo 1. A alternativa correta é a letra A. "
 
         }
         if(resp8.value == "correta"){
@@ -143,7 +143,7 @@ function funcao_resposta(){
             contador = contador + 1;
         }
         else{
-            document.getElementById("resp_errada_8").innerHTML = " 8 "
+            document.getElementById("resp_errada_8").innerHTML = " De acordo com a lei da gravitação universal, a força de atração gravitacional entre dois corpos é sempre atrativa e também inversamente proporcional ao quadrado da distância que os separa. Sendo assim, ao triplicarmos a distância entre esses corpos, a força atrativa entre eles deverá diminuir em nove vezes. A alternativa correta é a letra B."
 
         }
         if(resp9.value == "correta"){
@@ -151,7 +151,7 @@ function funcao_resposta(){
             contador = contador + 1;
         }
         else{
-            document.getElementById("resp_errada_9").innerHTML = " 9 "
+            document.getElementById("resp_errada_9").innerHTML = " Por serem elásticos, os para-choques modernos prolongam o tempo das colisões, que, por sua vez, diminuem a aceleração sofrida pelos passageiros, já que tal grandeza é inversamente proporcional ao tempo em que uma colisão ocorre. "
 
         }
         if(resp10.value == "correta"){
@@ -159,7 +159,7 @@ function funcao_resposta(){
             contador = contador + 1;
         }
         else{
-            document.getElementById("resp_errada_10").innerHTML = " 0"
+            document.getElementById("resp_errada_10").innerHTML = "Letra A. A soma das forças que atuam sobre o livro é nula, e a tendência do corpo é manter o movimento. A situação do livro é de equilíbrio dinâmico."
 
         }
         document.getElementById("quantos_acertos").innerHTML = "Você acertou " + contador + " questões!";
@@ -169,6 +169,11 @@ function funcao_resposta(){
     }
 
 }
+
+function mudar(objeto, imagem){
+    carrinho.src = imagem;
+}
+
 
 function inclui_nome() {
     var nome_variavel = prompt("Coloque seu nome:");

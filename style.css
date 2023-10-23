@@ -40,9 +40,10 @@ header{
     background-color: midnightblue;
     grid-area: cab;
     height: 180px;
-    display: inline;
+    display: flex;
     align-items: center;
-    text-align:right
+    position: relative;
+    
 }
 
 aside{
@@ -71,8 +72,14 @@ footer{
 }
 
 .imgheader{
+   
+  max-width: 80px;
     
-    max-width: 250px;
+}
+.link , a{
+    text-decoration: none;
+   text-align: center;
+   align-items: center;
 }
 
 .legenda{
@@ -138,10 +145,6 @@ p{
        
 }
 
-.imagemproduto{
-    width: 700px;
-    height: 690px;
-}
 
 
 .texto a{
