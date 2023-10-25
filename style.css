@@ -71,6 +71,23 @@ footer{
 
 }
 
+.botaocalcular input{
+        width: 100px;
+        height: 20px;
+        font-size: 15px;
+        color: #343434;
+        background-color:white;
+        border: 1px solid #000000;
+        border-radius: 20px;
+}
+.calculadorasoma{
+    padding: 5px;
+    border: solid rgba(0, 0, 0, 0.547) 5px;
+    background-color:rgb(88, 88, 233);
+    border-radius: 5px;
+    width: 700px;
+    height: 600px;
+}
 .imgheader{
    
   
@@ -118,7 +135,18 @@ p{
 .vermelho{
     color: red;
 }
+.elementopai{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    padding: auto;
+    flex-wrap: wrap;
+    align-items: center; 
+    margin: 60px;
+    border-radius: 20px;
+   grid-gap: 30px;
 
+}
 .elemento_pai{
     display: flex;
     justify-content: center;

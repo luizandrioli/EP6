@@ -1,67 +1,29 @@
-function josefa(){
-    fernanda.value = parseInt(aram1.value) + parseInt(aram2.value);
-}
-function subtrair(){
-    fernanda.value = parseInt(aram1.value) - parseInt(aram2.value);
-}
-function multiplicacao(){
-    fernanda.value = parseInt(aram1.value) * parseInt(aram2.value);
-}
-function divisao(){
-    if(aram2.value == 0)
-        alert("coloque algo!");
+function calcular(){
+    if(massa.value == 0){
+        alert("Não é possível dividir por zero.");
+        forca.value = 0;
+    }
     else{
-        fernanda.value = parseInt(aram1.value) / parseInt(aram2.value);
+        aceleracao.value = parseInt(forca.value) / parseInt(massa.value);
+    }
+    
+}
+
+function variacaov(){
+    deltavelocidade.value = parseInt(deltav.value) - parseInt(deltav2.value);
+}
+function calcularaceleracao(){
+    if(deltataceleracao.value == 0){
+        alert("Não é possível dividir por zero.");
+        deltavaceleracao.value = 0;
+    }
+    else{
+        aceleracaodeltavt.value = parseInt(deltavaceleracao.value) / parseInt(deltataceleracao.value);
     }
 }
 
-function equacao1grau(){
-    var resposta = x.value;
-    var caculo = -b.value/a.value;
-
-    if(a.value == 0){
-        alert("A deve ser diferente de 0");
-    }
-    else{
-        if(calculo == reposta){
-            alert("acertou");
-        }
-        else{
-            alert("errou");
-        }
-    }
-}
-function equacao1grau2(){
-    var resposta = x2.value;
-    var caculo = -b2.value/a2.value;
-
-    if(a2.value == 0){
-        alert("A deve ser diferente de 0");
-    }
-    else{
-        if(calculo == reposta){
-            alert("acertou");
-        }
-        else{
-            alert("errou");
-        }
-    }
-}
-function equacao1grau3(){
-    var resposta = x3.value;
-    var caculo = -b3.value/a3.value;
-
-    if(a3.value == 0){
-        alert("A deve ser diferente de 0");
-    }
-    else{
-        if(calculo == reposta){
-            alert("acertou");
-        }
-        else{
-            alert("errou");
-        }
-    }
+function forcar(){
+    forcaresultante.value = parseInt(massadafr.value) * parseInt(aceleracaodafr.value);
 }
 
 
