@@ -1,243 +1,271 @@
 
-.body1{
-    background-color: black;
-    display: grid;
+/* Estilos para classes .body1, .body2 e .body3 */
+.body1 {
+    background-color: black; /* Define o plano de fundo como preto */
+    display: grid; /* Exibe elementos como uma grade */
     grid-template-areas: 
-    "cab cab cab"
+    "cab cab cab" /* Layout da grade com áreas de cabeçalho (cab), conteúdo principal (pri) e rodapé (rod) */
     "pri pri pri"
     "rod rod rod";
-    gap: 5px;
-    grid-template-columns: 200px auto 400px ;
-    grid-template-rows: auto auto auto;
+    gap: 5px; /* Espaçamento entre as células da grade */
+    grid-template-columns: 200px auto 400px; /* Largura das colunas da grade */
+    grid-template-rows: auto auto auto; /* Altura das linhas da grade */
 }
-.body2{
-    background-color: black;
-    display: grid;
+
+.body2 {
+    background-color: black; /* Define o plano de fundo como preto */
+    display: grid; /* Exibe elementos como uma grade */
     grid-template-areas: 
-    "cab cab cab"
+    "cab cab cab" /* Layout da grade com áreas de cabeçalho (cab), conteúdo principal (pri) e rodapé (rod) */
     "pri pri pri"
     "rod rod rod";
-    gap: 5px;
-    grid-template-columns:60% 24% auto;
-    grid-template-rows: auto auto auto;
+    gap: 5px; /* Espaçamento entre as células da grade */
+    grid-template-columns: 60% 24% auto; /* Largura das colunas da grade */
+    grid-template-rows: auto auto auto; /* Altura das linhas da grade */
 }
-.body3{
-    background-color: black;
-    display: grid;
+
+.body3 {
+    background-color: black; /* Define o plano de fundo como preto */
+    display: grid; /* Exibe elementos como uma grade */
     grid-template-areas: 
-    "cab cab cab"
+    "cab cab cab" /* Layout da grade com áreas de cabeçalho (cab), conteúdo principal (pri) e rodapé (rod) */
     "pri pri pri"
     "rod rod rod";
-    gap: 5px;
-    grid-template-columns:200px auto 400px;
-    grid-template-rows: auto auto auto;
+    gap: 5px; /* Espaçamento entre as células da grade */
+    grid-template-columns: 200px auto 400px; /* Largura das colunas da grade */
+    grid-template-rows: auto auto auto; /* Altura das linhas da grade */
 }
 
-header, aside, main, footer{
-    background-color: silver;
-}
-header{
-    background-color: midnightblue;
-    grid-area: cab;
-    height: 180px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    
+/* Estilo para elementos header, aside, main e footer */
+header, aside, main, footer {
+    background-color: silver; /* Define o plano de fundo como prateado */
 }
 
-aside{
-    grid-area: sec;
-    text-align: center;
+/* Estilo para o elemento header */
+header {
+    background-color: midnightblue; /* Define o plano de fundo como azul meia-noite */
+    grid-area: cab; /* Posiciona o elemento na área "cab" da grade */
+    height: 180px; /* Define a altura como 180px */
+    display: flex; /* Exibe elementos internos como um contêiner flexível */
+    align-items: center; /* Centraliza verticalmente os elementos internos */
+    position: relative; /* Define posição relativa */
 }
 
-main{
-    background-color: aliceblue;
-    grid-area: pri;
-    text-align: center;
-    
-    
+/* Estilo para o elemento aside */
+aside {
+    grid-area: sec; /* Posiciona o elemento na área "sec" da grade */
+    text-align: center; /* Centraliza o texto horizontalmente */
 }
 
-
-footer{
-    grid-area: rod;
-    
-
+/* Estilo para o elemento main */
+main {
+    background-color: aliceblue; /* Define o plano de fundo como azul alice */
+    grid-area: pri; /* Posiciona o elemento na área "pri" da grade */
+    text-align: center; /* Centraliza o texto horizontalmente */
 }
 
-.calculadora{
-    margin-right: 100px;
-
+/* Estilo para o elemento footer */
+footer {
+    grid-area: rod; /* Posiciona o elemento na área "rod" da grade */
 }
 
-.botaocalcular input{
-        width: 100px;
-        height: 20px;
-        font-size: 15px;
-        color: #343434;
-        background-color:white;
-        border: 1px solid #000000;
-        border-radius: 20px;
-}
-.calculadorasoma{
-    padding: 5px;
-    border: solid rgba(0, 0, 0, 0.547) 5px;
-    background-color:rgb(88, 88, 233);
-    border-radius: 5px;
-    width: 700px;
-    height: 600px;
-}
-.imgheader{
-   
-  
-  height: auto;
-  width: 170px;
-    
-}
-.link , a{
-    text-decoration: none;
-   text-align: center;
-   align-items: center;
+/* Estilo para elementos com classe "calculadora" */
+.calculadora {
+    margin-right: 100px; /* Define uma margem direita de 100px */
 }
 
-.legenda{
-    line-height: 5px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+/* Estilo para inputs dentro de elementos com classe "botaocalcular" */
+.botaocalcular input {
+    width: 100px; /* Define a largura como 100px */
+    height: 20px; /* Define a altura como 20px */
+    font-size: 15px; /* Define o tamanho da fonte como 15px */
+    color: #343434; /* Define a cor do texto */
+    background-color: white; /* Define o plano de fundo como branco */
+    border: 1px solid #000000; /* Define uma borda com 1px sólido e cor preta */
+    border-radius: 20px; /* Define um raio de borda de 20px */
 }
 
-.questoes{
-    text-align: left;
-    padding-left: 50px;
-
-}
-#botao{
-    width: 300px;
-    height: 30px;
-    border-radius: 20px;
-    background-color: midnightblue;
-    color: white;
-    margin-bottom: 20px;
+/* Estilo para elementos com classe "calculadorasoma" */
+.calculadorasoma {
+    padding: 5px; /* Define um preenchimento de 5px */
+    border: solid rgba(0, 0, 0, 0.547) 5px; /* Define uma borda sólida com uma cor RGBA */
+    background-color: rgb(88, 88, 233); /* Define o plano de fundo com uma cor RGB */
+    border-radius: 30px; /* Define um raio de borda de 30px */
+    width: 700px; /* Define a largura como 700px */
+    height: 600px; /* Define a altura como 600px */
 }
 
-.citacao{
-     
-    font-family:'Courier New', Courier, monospace;
+/* Estilo para a classe "imgheader" */
+.imgheader {
+    height: auto; /* Define a altura automática */
+    width: 170px; /* Define a largura como 170px */
 }
 
-p{
-    font-size: 20px;
-    margin: 20px;
-}
-.verde{
-    color: rgb(6, 253, 6);
-}
-.vermelho{
-    color: red;
-}
-.elementopai{
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    padding: auto;
-    flex-wrap: wrap;
-    align-items: center; 
-    margin: 60px;
-    border-radius: 20px;
-   grid-gap: 30px;
-
-}
-.elemento_pai{
-    display: flex;
-    justify-content: center;
-        
-    padding: 20px;
-    flex-wrap: wrap;
-    align-items: center;  
+/* Estilo para imagens dentro de elementos com classe "calculadorasoma" */
+.calculadorasoma img {
+    display: flex; /* Exibe elementos como flexíveis */
+    border-radius: 30%; /* Define um raio de borda de 30% */
+    height: 200px; /* Define a altura como 200px */
+    width: 240px; /* Define a largura como 240px */
+    margin-left: 230px; /* Define uma margem à esquerda de 230px */
 }
 
-.elemento_pai2{     
-    display: flex;
-    justify-content: center;
-        
-    padding: 20px;
-    flex-wrap: wrap;
-    align-items: center;
-    
+/* Estilo para elementos com classe "link" e âncoras */
+.link, a {
+    text-decoration: none; /* Remove decoração de texto sublinhado */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    align-items: center; /* Centraliza elementos verticalmente */
 }
 
-.card{
-    border-radius: 10px;
-    padding: 10px;
-    width: 300px;
-    margin: 60px;
-    text-align: center;
-    box-shadow: 3px 6px 9px #9fa106;
-    transition: 0.5s;
-    background-color: #584f58b3;
+/* Estilo para a classe "legenda" */
+.legenda {
+    line-height: 5px; /* Define a altura da linha como 5px */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Define a família da fonte */
 }
 
-.card2{
-    border-radius: 10px;
-    padding: 10px;
-    width: 730px;
-    margin: 90px;
-    text-align: center;
-    box-shadow: 3px 6px 9px #020b4d;
-    transition: 0.5s;
-    background-color: #584f58b3;
-       
+/* Estilo para elementos com classe "questoes" */
+.questoes {
+    text-align: left; /* Alinha o texto à esquerda */
+    padding-left: 50px; /* Define um preenchimento à esquerda de 50px */
 }
 
-
-
-.texto a{
-    display: block;
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-    border-radius: 20px;
-    text-decoration: none;
-    transition: 0.5s;
- }
-
-.textoAD a{
-    display: block;
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-    border-radius: 20px;
-    text-decoration: none;
-    transition: 0.5s;
- }
-    
-.card:hover{
-    background-color: black;
-    color: white;
- }
-    
-.card:hover a{
-    background-color: rgb(255, 0, 0);
-     color: black;
+/* Estilo para o elemento com ID "botao" */
+#botao {
+    width: 300px; /* Define a largura como 300px */
+    height: 30px; /* Define a altura como 30px */
+    border-radius: 20px; /* Define um raio de borda de 20px */
+    background-color: midnightblue; /* Define o plano de fundo como azul meia-noite */
+    color: white; /* Define a cor do texto como branca */
+    margin-bottom: 20px; /* Define uma margem inferior de 20px */
 }
 
-.lista{
-    list-style-type: none;
+/* Estilo para elementos com classe "citacao" */
+.citacao {
+    font-family: 'Courier New', Courier, monospace; /* Define a família da fonte */
 }
 
-.card:hover img{
-        border-radius: 30%;
-       
-        
+/* Estilo para parágrafos */
+p {
+    font-size: 20px; /* Define o tamanho da fonte como 20px */
+    margin: 20px; /* Define margens de 20px */
 }
-    
-    .texto a:hover{
-        background-color: rgb(253, 0, 0);
-    }
 
-    .card img{
-        border-radius: 30%;
-        height: 190px;
-        width: 240px;
+/* Estilo para elementos com classe "verde" e "vermelho" */
+.verde {
+    color: rgb(6, 253, 6); /* Define a cor como verde usando notação RGB */
+}
 
-    }
+.vermelho {
+    color: red; /* Define a cor como vermelha */
+}
+
+/* Estilo para elementos com classe "elementopai" */
+.elementopai {
+    display: flex; /* Exibe elementos como flexíveis */
+    justify-content: center; /* Centraliza horizontalmente */
+    padding: 20px; /* Define preenchimento de 20px */
+    padding: auto; /* Define preenchimento automático (substitui o valor anterior) */
+    flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha */
+    align-items: center; /* Centraliza verticalmente os elementos */
+    margin: 60px; /* Define margens de 60px */
+    border-radius: 20px; /* Define um raio de borda de 20px */
+    grid-gap: 30px; /* Define um espaçamento de grade de 30px */
+}
+
+/* Estilo para elementos com classes "elemento_pai" e "elemento_pai2" */
+.elemento_pai {
+    display: flex; /* Exibe elementos como flexíveis */
+    justify-content: center; /* Centraliza horizontalmente */
+    padding: 20px; /* Define preenchimento de 20px */
+    flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha */
+    align-items: center; /* Centraliza verticalmente os elementos */
+}
+
+/* Estilo para elementos com classe "elemento_pai2" */
+.elemento_pai2 {
+    display: flex; /* Exibe elementos como flexíveis */
+    justify-content: center; /* Centraliza horizontalmente */
+    padding: 20px; /* Define preenchimento de 20px */
+    flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha */
+    align-items: center; /* Centraliza verticalmente os elementos */
+}
+
+/* Estilo para elementos com classe "card" */
+.card {
+    border-radius: 10px; /* Define um raio de borda de 10px */
+    padding: 10px; /* Define preenchimento de 10px */
+    width: 300px; /* Define a largura como 300px */
+    margin: 60px; /* Define margens de 60px */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    box-shadow: 3px 6px 9px #9fa106; /* Adiciona uma sombra ao elemento */
+    transition: 0.5s; /* Define uma transição de 0.5 segundos */
+    background-color: #584f58b3; /* Define o plano de fundo com uma cor RGBA */
+}
+
+/* Estilo para elementos com classe "card2" */
+.card2 {
+    border-radius: 10px; /* Define um raio de borda de 10px */
+    padding: 10px; /* Define preenchimento de 10px */
+    width: 730px; /* Define a largura como 730px */
+    margin: 90px; /* Define margens de 90px */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    box-shadow: 3px 6px 9px #020b4d; /* Adiciona uma sombra ao elemento */
+    transition: 0.5s; /* Define uma transição de 0.5 segundos */
+    background-color: #584f58b3; /* Define o plano de fundo com uma cor RGBA */
+}
+
+/* Estilo para links dentro de elementos com classe "texto" */
+.texto a {
+    display: block; /* Exibe como bloco para ocupar a largura total do contêiner */
+    padding: 10px 20px; /* Define preenchimento interno de 10px (vertical) e 20px (horizontal) */
+    background-color: black; /* Define o plano de fundo como preto */
+    color: white; /* Define a cor do texto como branca */
+    border-radius: 20px; /* Define um raio de borda de 20px */
+    text-decoration: none; /* Remove a decoração de texto sublinhado */
+    transition: 0.5s; /* Define uma transição de 0.5 segundos */
+}
+
+/* Estilo para links dentro de elementos com classe "textoAD" */
+.textoAD a {
+    display: block; /* Exibe como bloco para ocupar a largura total do contêiner */
+    padding: 10px 20px; /* Define preenchimento interno de 10px (vertical) e 20px (horizontal) */
+    background-color: black; /* Define o plano de fundo como preto */
+    color: white; /* Define a cor do texto como branca */
+    border-radius: 20px; /* Define um raio de borda de 20px */
+    text-decoration: none; /* Remove a decoração de texto sublinhado */
+    transition: 0.5s; /* Define uma transição de 0.5 segundos */
+}
+
+/* Estilo para elementos com classe "card" quando o mouse passa por cima */
+.card:hover {
+    background-color: black; /* Altera o plano de fundo para preto */
+    color: white; /* Altera a cor do texto para branca */
+}
+
+/* Estilo para links dentro de elementos com classe "card" quando o mouse passa por cima */
+.card:hover a {
+    background-color: rgb(255, 0, 0); /* Altera o plano de fundo para vermelho */
+    color: black; /* Altera a cor do texto para preto */
+}
+
+/* Estilo para listas com classe "lista" */
+.lista {
+    list-style-type: none; /* Remove os marcadores de lista padrão */
+}
+
+/* Estilo para imagens dentro de elementos com classe "card" quando o mouse passa por cima */
+.card:hover img {
+    border-radius: 30%; /* Define um raio de borda de 30% */
+}
+
+/* Estilo para links dentro de elementos com classe "texto" quando o mouse passa por cima */
+.texto a:hover {
+    background-color: rgb(253, 0, 0); /* Altera o plano de fundo para vermelho */
+}
+
+/* Estilo para imagens dentro de elementos com classe "card" */
+.card img {
+    border-radius: 30%; /* Define um raio de borda de 30% */
+    height: 190px; /* Define a altura como 190px */
+    width: 240px; /* Define a largura como 240px */
+}
